@@ -49,6 +49,18 @@
             h1 {
                 padding: 16px;
             }
+            .input {
+                width: 100%;
+                border-radius: 0;
+                border: none;
+                background-color: antiquewhite;
+                color: black;
+            }
+            button {
+                width: 30%;
+                padding: 16px;
+                margin-top: 16px;
+            }
         </style>
     </head>
     <body> 
@@ -132,9 +144,87 @@
                     </tr>
                 </table>
             </section>
+            <section>
+                <h2>Request a quote for your project</h2>
+                <div>
+                    <label for="name">Your name and last name</label>
+                    <input class="input" type="text" id="name" name="full_name">
+                </div>
+                <div>
+                    <label for="name">Your title</label>
+                    <select class="input">
+                        <option value="mr">Mr.</option>
+                        <option value="mrs">Mrs.</option>
+                    </select>
+                </div>
+                <div>
+                    <button type="submit">Send Request</button>
+                </div>
+            </section>
+            <section>
+                <h2>Send Request</h2>
+                <div>
+                    <label for="name">Your name and last name</label>
+                    <input class="input" type="text" id="name" name="full_name">
+                </div>
+                <div>
+                    <label for="name">Your title</label>
+                    <select class="input">
+                        <option value="mr">Mr.</option>
+                        <option value="mrs">Mrs.</option>
+                        <option value="sir">Sir.</option>
+                        <option value="madam">Madam</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="email">Your Email</label>
+                    <input class="input" type="email" name="email" required>
+                </div>
+                <div>
+                    <button type="submit">Send Request</button>
+                </div>
+            </section>
+            <section>
+                <h2>Project description</h2>
+                <div>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+                <table border="1">
+                    <h2>BUDGET</h2>
+                    <thead>
+                        <th>10K EUR</th>
+                        <th>10-100K EUR</th>
+                        <th>100K EUR</th>
+                    </thead>
+                    <tbody>
+                        <td>10,00</td>
+                        <td>20,00</td>
+                        <td>30,00</td>
+                    </tr>
+                    <tr>
+                        <td>20,00</td>
+                        <td>30,00</td>
+                        <td>40,00</td>
+                    </tr>
+                    <tr>
+                        <td>30,00</td>
+                        <td>40,00</td>
+                        <td>50,00</td>
+                    </tr>
+                </table>
+                <div>
+                    <h2>Favorite radio station</h2>
+                    <button><a href="https://www.yammat.fm/" target="_blank">Yammat FM</a></button>
+                </div>
+                <div>
+                    <h2>GDPR</h2>
+                    <input type="radio">
+                </div>
+            </section>
         </main>
         <footer class="wrapper">
             <p>&copy; Darija Vuković</p>
         </footer>
     </body>
 </html>
+
