@@ -25,10 +25,13 @@
                 margin-top: 16px;
                 margin-bottom: 16px;
             }
-            main {
+            .wrapper {
                 margin-left: auto;
                 margin-right: auto;
                 max-width: 768px;
+            }
+            .header {
+                background-color:darkgoldenrod;
             }
             img {
                 width: 50%;
@@ -43,9 +46,12 @@
         </style>
     </head>
     <body> 
-        <main>
+        <header class="wrapper">
+            <h1>Welcome to my portfolio</h1>
+        </header>
+        <main class="wrapper">
             <section>
-                <h1>About me</h1>
+                <h2>About me</h2>
                 <p>My name is <strong>Darija Vuković</strong> and I am a <strong>frontend developer</strong> from Drniš, Croatia.</p>
                 <p>My skills include</p>
                 <ul>
@@ -63,7 +69,7 @@
                 <div><a href="https://linkedin.com" target="_blank">GitHub</a></div>
             </section>
             <section>
-                <h1>Projects</h1>
+                <h2>Projects</h2>
                 <ul>
                     <li>
                         <div>
@@ -76,10 +82,48 @@
                             <img src="./media/company-website.png"></li>
                         </div>
                         <div>
-                            <p class="note editorial"></p><a href="https://darijavuk.github.io/company-website">Company website<p>
+                            <p class="note editorial"></p><a href="https://darijavuk.github.io/company-website"></a>Company website<p>
                         </div>
                 </ul>
             </section>
+            <section>
+                <table border="1">
+                    <h2>Price list per quartal</h2>
+                    <thead>
+                        <th>Q1</th>
+                        <th>Q2</th>
+                        <th>Q3</th>
+                        <th>Q4</th>
+                    </thead>
+                    <tbody>
+                        <td>HOUR</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>DAY</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>WEEK</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>MOUNTH</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </section>
         </main>
+        <footer class="wrapper">
+            <p>&copy; Darija Vuković</p>
+        </footer>
     </body>
 </html>
