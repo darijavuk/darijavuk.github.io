@@ -3,75 +3,176 @@
     <head>
         <title>Darija Vuković Portfolio</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width", initial-scale="1.0">
-        <meta neme="description" content="The portfolio of Darija Vuković, a frontend developer from Drniš-Croatia">
-        <link type="image/png" sizes="16x16" rel="icon" href="./media/favicon.ico">
+        <meta name="viewpoint" content="with=device-width, initial-scale=1.0">
+        <meta name="description" content="The portfolio of Darija Vuković, a frontend developer from Šibenik, Croatia">
+        <link type="image/png" rel="icon" href="./media/favicon.ico">
+
+        <!--CSS-->
 
         <style>
             body {
                 background-color: lightblue;
-                color: black;
-                font-family: sans-serif; 
+                color: rgb(48, 50, 51);
+                font-family: sans-serif;
+                font-size: 11pt;
+                line-height: 120%;
             }
+
             a {
-                color: brown;
+                color: black;
+                font-style: none;
+                font-size: 10pt;
             }
-            header {
-                background-color:cadetblue;
+
+            a:hover {
+                color: cyan;
             }
-            thead {
-                background-color: aliceblue;
-            }
+
             section {
                 background-color: cadetblue;
-                padding-left: 16px;
-                padding-right: 16px;
                 padding-top: 16px;
                 padding-bottom: 16px;
-                margin-top: 16px;
-                margin-bottom: 16px;
+                padding-left: 32px;
+                padding-right: 16px;
+                margin-top: 8px;
+                margin-bottom: 8px;
             }
+
             .wrapper {
                 margin-left: auto;
                 margin-right: auto;
                 max-width: 768px;
             }
+
+            header {
+                background-color: lightblue;
+                padding-top: 42px;
+                margin-bottom: 16px;
+            }
+
             img {
-                width: 50%;
+                width: 40%;
                 aspect-ratio: 16 / 9;
                 object-fit: cover;
-                
             }
-            ul {
-                list-style-type: none;
-                padding: 0px;
+
+            .flash {
+                background-color: rgb(222, 216, 216);
             }
-            h1 {
-                padding: 16px;
+
+            .flash_small {
+                background-color: rgb(240, 234, 234);
+                width: 15%;
             }
-            .input {
+
+            table {
+                border-collapse: collapse;
+                background-color: rgb(243, 241, 241);
+                font-family: sans-serif;
+                font-size: 0.8rem;
                 width: 100%;
-                border-radius: 0;
-                border: none;
-                background-color: antiquewhite;
-                color: black;
             }
+
+            caption {
+                caption-side: bottom;
+                padding: 10px;
+            }
+
+            th,
+            td {
+                border: 1px solid rgb(160 160 160);
+                padding: 8px 6px;
+            }
+
+            td {
+                text-align: center;
+            }
+
+            ul {
+                font-size: 10pt;
+                list-style-type: none;
+                padding-left: 0;
+            }
+
+            .li {
+                margin-bottom: 12px;
+            }
+
+            .input {
+                width: 74%;
+                border-radius: 0;
+                border: 0px;
+                background-color: rgb(243, 241, 241);
+                color: black;
+                line-height: 200%;
+                margin-bottom: 8px;
+            }
+
             button {
+                background-color: cyan;
+                color: black;
+                border: none;
+                padding: 4px;
+                margin: 8px;
                 width: 30%;
-                padding: 16px;
+                height: 40px;
+                font-size: 12pt;
+            }
+
+            .button_small {
+                background-color: cadetblue;
+                color: black;
+                border: 1px solid cyan;
+            }
+
+            .button_small:hover {
+                background-color: lightblue;
+            }
+
+            h1 {
+                font-size: 36pt;
+                line-height: 110%;
+                color: cadetblue;
+                margin-left: 32px;
+                padding-bottom: 8px;
+            }
+
+            h2 {
+                font-size: 18pt;
+                color: rgb(48, 50, 51);
+            }
+
+            h6 {
+                font-size: 9pt;
+                color: rgb(48, 50, 51);
+                margin-top: 4px;
+            }
+
+            table {
+                font-size: 10pt;
+                color: rgb(48, 50, 51);
+            }
+
+            fieldset {
                 margin-top: 16px;
+                margin-bottom: 16px;
+                border-color: cyan;
+                width: 70%;
             }
         </style>
+
+        <!--CSS end-->
+
     </head>
-    <body> 
-        <header class="wrapper">
-            <h1>Welcome to my portfolio</h1>
+    <body>
+        <header class="wrapper header">
+            <h1>Welcome to my portfolio ::</h1>
         </header>
         <main class="wrapper">
             <section>
-                <h2>About me</h2>
-                <p>My name is <strong>Darija Vuković</strong> and I am a <strong>frontend developer</strong> from Drniš, Croatia.</p>
-                <p>My skills include</p>
+                <h2>About me ::</h2>
+                <p>My name is <strong>Darija Vuković</strong> and I am a <strong>frontend developer</strong> from Šibenik, Croatia.</p>
+                <p>My skils include:</p>
                 <ul>
                     <li>HTML</li>
                     <li>CSS</li>
@@ -80,151 +181,111 @@
                     <li>Git</li>
                 </ul>
             </section>
+
             <section>
-                <h2>Contact me</h2>
-                <div><a href="mailto:examle@email.com">Email</a></div>
-                <div><a href="tel:+385256789">Phone</a></div>
-                <div><a href="https://linkedin.com" target="_blank">GitHub</a></div>
+                <h2>Contact me ::</h2>
+                <button class="button_small"><a href="mailto:example@email.com">example@email.com</a></button>
+                <button class="button_small"><a href="tel:+38512345678">+38512345678</a></button>
+                <button class="button_small"><a href="https://www.linkedin.com/in/example-profile/">LinkedIn Profile</a></button>
             </section>
+
             <section>
-                <h2>Projects</h2>
+                <h2>Projects ::</h2>
                 <ul>
+                    <li class="li">
+                        <div><img src="./media/company-website.png" alt="Screenshot of Company website"></div>
+                        <div>Company website</div>
+                    </li>
                     <li>
-                        <div>
-                            <img src="./media/search.png"></li></div>
-                        <div>
-                            <p class="note editorial"></p><a href="https://darijavuk.github.io/algebra-search/search.html">Search<p>
-                        </div>
-                    <li>
-                        <div>
-                            <img src="./media/company-website.png"></li>
-                        </div>
-                        <div>
-                            <p class="note editorial"></p><a href="https://darijavuk.github.io/company-website"></a>Company website<p>
-                        </div>
+                        <div><img src="./media/search.png" alt="Screenshot of Search website"></div>
+                        <div>Search</div>
+                    </li>
                 </ul>
             </section>
+
             <section>
-                <table border="1">
-                    <h2>Price list per quarter</h2>
-                    <thead>
+                <h2>Price list ::</h2>
+                <table>
+                    <tr class="flash">
                         <th></th>
                         <th>Q1</th>
                         <th>Q2</th>
                         <th>Q3</th>
                         <th>Q4</th>
-                    </thead>
-                    <tbody>
-                        <td>HOUR</td>
-                        <td>10,00</td>
-                        <td>20,00</td>
-                        <td>30,00</td>
-                        <td>40,00</td>
                     </tr>
                     <tr>
-                        <td>DAY</td>
-                        <td>20,00</td>
-                        <td>30,00</td>
-                        <td>40,00</td>
-                        <td>50,00</td>
+                        <th class="flash_small">hour</th>
+                        <td>100 E</td>
+                        <td>200 E</td>
+                        <td>300 E</td>
+                        <td>400 E</td>
                     </tr>
                     <tr>
-                        <td>WEEK</td>
-                        <td>30,00</td>
-                        <td>40,00</td>
-                        <td>50,00</td>
-                        <td>60,00</td>
+                        <th class="flash_small">week</th>
+                        <td>300 E</td>
+                        <td>400 E</td>
+                        <td>500 E</td>
+                        <td>600 E</td>
                     </tr>
                     <tr>
-                        <td>MOUNTH</td>
-                        <td>40,00</td>
-                        <td>50,00</td>
-                        <td>60,00</td>
-                        <td>70,00</td>
+                        <th class="flash_small">mounth</th>
+                        <td>500 E</td>
+                        <td>600 E</td>
+                        <td>700 E</td>
+                        <td>800 E</td>
                     </tr>
                 </table>
             </section>
+
             <section>
-                <h2>Request a quote for your project</h2>
-                <div>
-                    <label for="name">Your name and last name</label>
-                    <input class="input" type="text" id="name" name="full_name">
-                </div>
-                <div>
-                    <label for="name">Your title</label>
-                    <select class="input">
-                        <option value="mr">Mr.</option>
-                        <option value="mrs">Mrs.</option>
-                    </select>
-                </div>
-                <div>
-                    <button type="submit">Send Request</button>
-                </div>
-            </section>
-            <section>
-                <h2>Send Request</h2>
-                <div>
-                    <label for="name">Your name and last name</label>
-                    <input class="input" type="text" id="name" name="full_name">
-                </div>
-                <div>
-                    <label for="name">Your title</label>
-                    <select class="input">
-                        <option value="mr">Mr.</option>
-                        <option value="mrs">Mrs.</option>
-                        <option value="sir">Sir.</option>
-                        <option value="madam">Madam</option>
-                    </select>
-                </div>
-                <div>
-                    <label for="email">Your Email</label>
-                    <input class="input" type="email" name="email" required>
-                </div>
-                <div>
-                    <button type="submit">Send Request</button>
-                </div>
-            </section>
-            <section>
-                <h2>Project description</h2>
-                <div>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                </div>
-                <table border="1">
-                    <h2>BUDGET</h2>
-                    <thead>
-                        <th>10K EUR</th>
-                        <th>10-100K EUR</th>
-                        <th>100K EUR</th>
-                    </thead>
-                    <tbody>
-                        <td>10,00</td>
-                        <td>20,00</td>
-                        <td>30,00</td>
-                    </tr>
-                    <tr>
-                        <td>20,00</td>
-                        <td>30,00</td>
-                        <td>40,00</td>
-                    </tr>
-                    <tr>
-                        <td>30,00</td>
-                        <td>40,00</td>
-                        <td>50,00</td>
-                    </tr>
-                </table>
-                <div>
-                    <h2>Favorite radio station</h2>
-                    <button><a href="https://www.yammat.fm/" target="_blank">Yammat FM</a></button>
-                </div>
-                <div>
-                    <h2>GDPR</h2>
-                    <input type="radio">
-                </div>
+                <h2>Request a quote for your project ::</h2>
+                <form>
+                    <div>
+                        <label for="name">Your first and last name:</label><br>
+                        <input class="input" type="text" id="name" name="full_name">
+                    </div>
+                    <div>
+                        <label for="title">Your title:</label><br>
+                        <select class="input" id="title" name="title">
+                            <option value="mr">Mr.</option>
+                            <option value="mrs">Mrs.</option>
+                            <option value="sir">Sir</option>
+                            <option value="Madam">Madam</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="email">Your email:</label><br>
+                        <input class="input" type="email" id="email" name="email">
+                    </div>
+                    <div>
+                        <label for="description">Project description</label><br>
+                        <textarea class="input" id="description" name="description" rowa="8"></textarea>
+                    </div>
+                    <div>
+                        <label for="budget">Your budget:</label><br>
+                        <select class="input" id="budget" name="budget">
+                            <option>&lt; 10K E</option>
+                            <option>10K-100K E</option>
+                            <option>&gt; 100K E</option>
+                        </select> 
+                    </div>
+                    <div>
+                        <fieldset>
+                            <legend><strong>Required service:</strong></legend>
+                            <label><input type="radio" name="service" value="design">Design</label>
+                            <label><input type="radio" name="service" value="development">Development</label>
+                        </fieldset>
+                    </div>
+                    <div>
+                        <label><input type="checkbox" name="gdpr"><h6>I consent to the terms and conditions.</h6></label>
+                    </div>
+                    <div>
+                        <button type="submit">Send request</button>
+                    </div>
+                </form>
             </section>
         </main>
-        <footer class="wrapper">
+        <footer>
             <p>&copy; Darija Vuković</p>
         </footer>
     </body>
-</html>
-
